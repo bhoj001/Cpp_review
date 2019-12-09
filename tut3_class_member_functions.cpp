@@ -27,16 +27,21 @@ void Box::set_height(double x){
 }
 
 double Box::get_volume(){
-    return length*breadth*height
+    return length*breadth*height;
 }
 
-
-
-
-
 int main(void){
+Box b1;
+b1.set_length(4);
+b1.set_height(5);
+b1.set_breadth(8);
+cout<<"Total volumn =" << b1.get_volume()<< endl;
 
-
+Box b2;
+b2.set_length(2);
+b2.set_height(5);
+b2.set_breadth(10);
+cout<<"Total volumn =" << b2.get_volume()<< endl;
 
 return 0;
 }
